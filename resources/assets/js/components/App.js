@@ -37,7 +37,7 @@ class App extends Component {
         <BrowserRouter>
           <div className="app">
               <Errors />
-              <Route exact path="/" component={LandingPage} />
+              <Route exact path="/" component={Login} />
               <Route path="/login" component={Login} />
               <Route path="/account/create" component={Register} />
               <PrivateRoute path="/admin" component={BackendLayout}/>
