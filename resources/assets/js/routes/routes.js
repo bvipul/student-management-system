@@ -21,6 +21,7 @@ import MarksCreate from '../components/Marks/Create';
 import MarksEdit from '../components/Marks/Edit';
 
 import MyReport from '../components/MyReport/MyReport';
+import Profile from '../components/Profile/Profile';
 
 const routes = [
   { path: '/admin', exact: true, name: 'Home', component: BackendLayout },
@@ -52,7 +53,8 @@ const routes = [
   { path: '/admin/marks/create', name: 'Add Marks', component: MarksCreate },
   { path: '/admin/marks/:id/edit', name: 'Edit Marks', component: MarksEdit },
 
-  { path: '/student/my-report', name: 'My Report', component: MyReport}
+  { path: '/student/my-report', name: 'My Report', component: MyReport },
+  { path: '/student/profile', name: 'My Profile', component: Profile }
 ];
 
 export default routes;

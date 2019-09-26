@@ -41,6 +41,11 @@ export default {
         icon: 'icon-speedometer'
       },
       {
+        name: 'Profile',
+        url: '/student/profile',
+        icon: 'icon-user'
+      },
+      {
         name: 'My Report',
         url: '/student/my-report',
         icon: 'icon-badge'

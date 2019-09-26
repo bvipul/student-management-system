@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Validator;
+use App\User;
 
 class AuthController extends ApiController
 {
@@ -41,7 +42,7 @@ class AuthController extends ApiController
             'success'   => true,
             'message'   => "Login Successful",
             'token'     => $token,
-            'user'      => \Auth::user()->toArray()
+            'user'      => User::with('course')->find(\Auth::id())->toArray()
         ]);
     }
 
