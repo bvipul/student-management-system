@@ -12,7 +12,7 @@
         "watch-css": "npm run build-css && node-sass-chokidar --include-path ./node_modules ./src/scss -o ./src/scss --watch --recursive"
     },
     "devDependencies": {
-        "axios": "^0.18",
+        "axios": "^0.21",
         "babel-jest": "^23.4.2",
         "babel-preset-react": "^6.23.0",
         "cross-env": "^5.1",
